@@ -1,0 +1,9 @@
+.sticky .sticky-hidden {
+  display: none !important;
+}
+.sticky-show {
+  display: none !important;
+}
+.sticky .sticky-show {
+  display: table-cell !important;
+}

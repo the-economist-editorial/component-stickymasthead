@@ -1,0 +1,83 @@
+:root {
+  --bg: #2dbdeb;
+  --link-size: 70px;
+  --link-size-tablet: 56px;
+  --link-size-mobile: 35px;
+}
+
+.wif-title {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle !important;
+}
+.wif-button a,
+.wif-button a svg {
+  width: var(--link-size);
+  height: var(--link-size);
+}
+.wif-button a {
+  background: var(--bg);
+  display: block;
+  margin-top: -7px;
+}
+.wif-button .home svg {
+  margin-top: -7px;
+}
+.mnv-ec-masthead-wrap .mnv-ec-share {
+  vertical-align: middle;
+}
+.mnv-ec-share.use-img.horizontal a:not(last-child) {
+  margin-right: 30px;
+}
+@media all and (max-width: 767px){
+  .mnv-ec-share.use-img.horizontal .mnv-ec-share-icons a {
+    margin-left: 0;
+  }
+  .mnv-ec-share.use-img.horizontal .mnv-ec-share-icons a:not(:last-of-type) {
+    margin-right: 26px;
+  }
+  .wif-button a,
+  .wif-button a svg {
+    width: var(--link-size-tablet);
+    height: var(--link-size-tablet);
+  }
+  .wif-button a {
+    margin-top: 0px;
+  }
+}
+@media all and (max-width: 568px){
+  .mnv-ec-share.use-img.horizontal .mnv-ec-share-icons a {
+    margin-left: 0;
+  }
+  .mnv-ec-share.use-img.horizontal .mnv-ec-share-icons a:not(:last-of-type) {
+    margin-right: 20px;
+  }
+  .mnv-ec-share.use-img.horizontal .mnv-ec-share-icons a:last-of-type {
+    margin-right: 0;
+  }
+  .wif-mh a,
+  .wif-mh a svg {
+    width: var(--link-size-mobile);
+    height: var(--link-size-mobile);
+  }
+  .wif-mh a {
+    background: var(--bg);
+  }
+  .mnv-ec-masthead-wrap .mnv-ec-masthead-logo {
+    display: none;
+  }
+  .mnv-ec-masthead-outer-wrap {
+    height: 35px;
+  }
+  .mnv-ec-share-icons {
+    text-align: center;
+  }
+}
+.wif-title,
+.mnv-ec-share {
+  width: 100% !important;
+}
+.wif-title,
+.mnv-ec-share {
+  text-align: right;
+}
