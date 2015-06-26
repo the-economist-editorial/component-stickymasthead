@@ -7,3 +7,6 @@
 .sticky .sticky-show {
   display: table-cell !important;
 }
+.sticky {
+  z-index: 9999999999;
+}
