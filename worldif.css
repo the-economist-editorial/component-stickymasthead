@@ -20,8 +20,10 @@
   display: block;
   margin-top: -7px;
 }
-.wif-button .home svg {
-  margin-top: -7px;
+.wif-button .home {
+  width: 70%;
+  height: 70%;
+  padding: 15%;
 }
 .mnv-ec-masthead-wrap .mnv-ec-share {
   vertical-align: middle;

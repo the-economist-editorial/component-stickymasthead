@@ -1,7 +1,7 @@
 {
   "name": "component-stickymasthead",
   "version": "1.0.0",
-  "description": "A basic MH",
+  "description": "Sticky effect applied to the MastHead component",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
   "repository": "git@github.com:the-economist-editorial/component-stickymasthead.git",
