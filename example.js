@@ -9,7 +9,7 @@ export default (
     <ShareBar customClass="sticky-show"></ShareBar>
     <div className="wif-button">
       <a href="/theWorldIf">
-        <Icon type='home' className="home sticky-show"/>
+        <Icon type='home' className="home sticky-show" background="none"/>
         <Icon type='logoWorldIF' className="if sticky-hidden"/>
       </a>
     </div>
