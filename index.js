@@ -4,17 +4,27 @@ import Sticky from 'react-sticky';
 
 export default class StickyMastHead extends React.Component {
 
-  constructor(props) {
-    super(props);
+  get propTypes() {
+    return {
+      topOffset: React.PropTypes.number,
+      children: React.PropTypes.node,
+    };
+  }
+
+  static get defaultProps() {
+    return {
+      topOffset: 80,
+    };
   }
 
   render() {
     return (
-      <Sticky topOffset={80}>
+      <Sticky topOffset={this.props.topOffset}>
         <MastHead>
           {this.props.children}
         </MastHead>
       </Sticky>
     );
   }
+
 }
