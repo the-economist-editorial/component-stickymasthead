@@ -1,5 +1,5 @@
 import React from 'react';
-import MastHead from './../component-masthead';
+import MastHead from '@economist/component-masthead';
 import Sticky from 'react-sticky';
 
 export default class StickyMastHead extends React.Component {

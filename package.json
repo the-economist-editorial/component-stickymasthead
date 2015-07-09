@@ -35,6 +35,7 @@
     "test:watch": "npm run test:base -- -wR min"
   },
   "dependencies": {
+    "@economist/component-masthead": "^1.0.0",
     "react": "^0.13.3",
     "react-sticky": "^2.3.0"
   },
