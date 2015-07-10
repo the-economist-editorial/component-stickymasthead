@@ -1,10 +1,12 @@
 import StickyMastHead from './index';
 import React from 'react';
-import ShareBar from './../component-sharebar';
-import Icon from './../component-icon';
+import ShareBar from '@economist/component-sharebar';
+import Icon from '@economist/component-icon';
+import MoreMenu from '@economist/component-moremenu';
 
 export default (
   <StickyMastHead>
+    <MoreMenu />
     <h1 className="wif-title sticky-hidden">The World</h1>
     <ShareBar customClass="sticky-show"></ShareBar>
     <div className="wif-button">

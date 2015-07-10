@@ -1,6 +1,9 @@
-@import '../component-sharebar';
 @import './worldif.css';
 @import './sticky.css';
+@import '@economist/component-palette-worldif';
+@import '@economist/component-font-neutra2';
+@import '@economist/component-moremenu';
+@import '@economist/component-sharebar';
 
 :root {
   --color-white: #fff;
@@ -116,7 +119,7 @@
   }
 }
 
-.mnv-ec-masthead-logo  img {
+.mnv-ec-masthead-logo  svg {
   height: calc(var(--barHeight) - (var(--spacing)*2));
   width: auto;
   border: none;
@@ -141,6 +144,9 @@
     padding-bottom: 0;
     letter-spacing: 1px;
     height: inherit;
+  }
+  .mnv-ec-masthead-logo svg {
+    display: none;
   }
 }
 
@@ -169,7 +175,7 @@
 }*/
 
 @media only screen and (max-width: 980px) {
-  .mnv-ec-masthead-logo img {
+  .mnv-ec-masthead-logo svg {
     margin-left: 9px;
   }
 }
@@ -186,13 +192,13 @@
 }
 
 
-.mnv-ec-masthead-sponsor img {
+.mnv-ec-masthead-sponsor svg {
   max-height: calc(var(--barHeight) - (var(--spacing)*2));
   height: 100%;
 }
 
 @media (--mobile){
-  .mnv-ec-masthead-sponsor img {
+  .mnv-ec-masthead-sponsor svg {
     padding-right: var(--spacing);
   }
 }

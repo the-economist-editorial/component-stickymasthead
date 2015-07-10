@@ -9,9 +9,10 @@ export default class StickyMastHead extends React.Component {
   }
 
   render() {
+    const smallLogo = { 'type': 'logoEconomistSmall' };
     return (
       <Sticky topOffset={80}>
-        <MastHead>
+        <MastHead logo={smallLogo}>
           {this.props.children}
         </MastHead>
       </Sticky>
