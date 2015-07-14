@@ -6,6 +6,7 @@ export default class StickyMastHead extends React.Component {
 
   get propTypes() {
     return {
+      className: React.PropTypes.string,
       topOffset: React.PropTypes.number,
       children: React.PropTypes.node,
     };
@@ -18,13 +19,16 @@ export default class StickyMastHead extends React.Component {
   }
 
   render() {
-    const smallLogo = { 'type': 'logoEconomistSmall' };
     return (
-      <Sticky topOffset={this.props.topOffset}>
-        <MastHead logo={smallLogo}>
+      <Sticky
+        className={`StickyMasthead ${this.props.className}`}
+        topOffset={this.props.topOffset}
+      >
+        <MastHead>
           {this.props.children}
         </MastHead>
       </Sticky>
     );
   }
+
 }

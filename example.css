@@ -1,3 +1,6 @@
+@import '@economist/component-sharebar';
+@import '@economist/component-icon';
+
 :root {
   --bg: #2dbdeb;
   --link-size: 70px;
