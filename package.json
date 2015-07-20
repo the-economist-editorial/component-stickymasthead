@@ -65,9 +65,10 @@
     "build": "npm-assets ."
   },
   "dependencies": {
+    "@economist/component-icon": "^3.0.0",
     "@economist/component-masthead": "^2.0.1",
-    "react-sticky": "^2.3.0",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "react-sticky": "^2.3.0"
   },
   "devDependencies": {
     "@economist/component-devpack": "^2.3.0",
