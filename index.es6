@@ -14,7 +14,7 @@ export default class StickyMastHead extends React.Component {
 
   static get defaultProps() {
     return {
-      topOffset: 80,
+      topOffset: 0,
     };
   }
 

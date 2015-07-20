@@ -40,7 +40,7 @@
       {
         "contents": "chai.should();mocha.setup('bdd');"
       },
-      "/test/index.es6?debug&external=react",
+      "/test/index.es6?babelify&debug&external=react",
       {
         "contents": "mocha.checkLeaks();mocha.run();"
       }
@@ -61,7 +61,8 @@
     "serve": "component-devserver .",
     "test": "npm run test:base -- -R tap",
     "test:base": "mocha -r babel/register -r @economist/component-testharness",
-    "test:watch": "npm run test:base -- -wR min"
+    "test:watch": "npm run test:base -- -wR min",
+    "build": "npm-assets ."
   },
   "dependencies": {
     "@economist/component-masthead": "^2.0.1",
@@ -75,8 +76,6 @@
     "@economist/component-sharebar": "^1.1.0",
     "@economist/component-testharness": "^1.1.0",
     "babel": "^5.5.8",
-    "babelify": "^6.1.2",
-    "browserify": "^10.2.4",
     "eslint": "^0.24.0",
     "eslint-config-strict": "^2.4.0",
     "eslint-plugin-filenames": "^0.1.1",
@@ -84,7 +83,7 @@
     "eslint-plugin-react": "^2.6.3",
     "minifyify": "^7.0.1",
     "mocha": "^2.2.5",
-    "npm-assets": "0.0.1",
+    "npm-assets": "^0.1.0",
     "pre-commit": "^1.0.10"
   },
   "pre-commit": [
