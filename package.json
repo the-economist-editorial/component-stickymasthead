@@ -55,14 +55,14 @@
     "lint_opts": "--ignore-path .gitignore --ext .es6"
   },
   "scripts": {
+    "build": "npm-assets .",
     "lint": "eslint $npm_package_config_lint_opts .",
-    "prepublish": "babel index.es6 --stage=0 --loose > index.js",
+    "prepublish": "babel index.es6 --source-maps=inline --stage=0 --loose > index.js",
     "provision": "devpack-configure ./package.json",
     "serve": "component-devserver .",
     "test": "npm run test:base -- -R tap",
     "test:base": "mocha -r babel/register -r @economist/component-testharness",
-    "test:watch": "npm run test:base -- -wR min",
-    "build": "npm-assets ."
+    "test:watch": "npm run test:base -- -wR min"
   },
   "dependencies": {
     "@economist/component-icon": "^3.0.1",
