@@ -18,10 +18,6 @@ export default class StickyMastHead extends React.Component {
     };
   }
 
-  componentWillMount() {
-    this.props.className = 'jsOn';
-  }
-
   render() {
     return (
       <Sticky
