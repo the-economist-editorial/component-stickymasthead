@@ -9,8 +9,17 @@ export default (
     <ShareBar customClass="sticky-show"/>
     <div className="wif-button">
       <a href="/theWorldIf">
-        <Icon icon="home" className="home StickyMasthead--visible" background="none" size="100%"/>
-        <Icon icon="logoWorldIF" className="if StickyMasthead--hidden" size="100%"/>
+        <Icon
+          icon="home"
+          className="home StickyMasthead--visible"
+          background="none"
+          size="100%"
+        />
+        <Icon
+          icon="logoWorldIF"
+          className="if StickyMasthead--hidden"
+          size="100%"
+        />
       </a>
     </div>
   </StickyMastHead>
