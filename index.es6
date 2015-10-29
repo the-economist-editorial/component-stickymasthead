@@ -23,13 +23,6 @@ export default class StickyMastHead extends React.Component {
       <Sticky
         className={`StickyMasthead ${this.props.className}`}
         topOffset={this.props.topOffset}
-        type={(attributes, children) => {
-          return (
-            <div {...attributes}>
-              {children}
-            </div>
-          );
-        }}
       >
         <MastHead>
           {this.props.children}
